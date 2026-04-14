@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 /* ======================== CSS Rule #1 */
 html {
   background-color: white;
@@ -8,5 +7,5 @@ html {
 
 /* ======================== CSS Rule #2 */
 h1 {
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
 }
