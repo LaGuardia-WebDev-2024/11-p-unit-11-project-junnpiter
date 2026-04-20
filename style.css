@@ -1,11 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 /* ======================== CSS Rule #1 */
 html {
-  background-color: white;
+  background-image: url("https://i.pinimg.com/736x/fb/09/73/fb097339472b284ce5fcfc9e9c5ad542.jpg");
+  background-color: rgba(255, 255, 255, 0.7); /* White color at 60% opacity */
+  background-blend-mode: lighten;
   padding-left: 20px;
 }
 
 /* ======================== CSS Rule #2 */
 h1 {
   font-family: "Protest Revolution", sans-serif;
+  color: crimson;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Protest Revolution", sans-serif;
+  text-align: center;
+}
+
+.look1 {
+  border: 5px solid lightblue;
+}
+
+.look2 {
+  border: 5px solid gold;
+}
+
+.look3 {
+  border: 5px solid crimson;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+p {
+  text-align: center
 }

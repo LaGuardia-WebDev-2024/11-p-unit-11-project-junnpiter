@@ -1,12 +1,12 @@
 <!-- Unit 11 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ x ] $() Select by Element, ID AND Class 
+[ x ] Use Three Different jQuery Methods 
+[ x ] Add Five CSS Declarations
+[ x ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -25,49 +25,73 @@ Select ONE Additional
     <button id="bape">Look 2</button>
     <button id="rising-sun">Look 3</button>
     <h1>Jun's Top 3 <span>Harry-June Looks</span></h1>
-    <p><em>P.S. i physically can't rank these. #icantpickafavorite</em></p>
+    <p class="p1"><em>P.S. i physically can't rank these. #icantpickafavorite</em><br>#numberoneharryjunestaninthenation</p>
     <ol>
+      
       <li>
         <h3 id="ride">URBAN RIDE: Ride Ver.</h3>
-        <p>this era in terms of outfits cannot be beat. this album was really serious for them. maybe overly serious.<br>
+        <p class="p1">this era in terms of outfits cannot be beat. this album was really serious for them. maybe overly serious.<br>
         i absolutely love his outfit in both album versions, but ride version really takes the cake for me. i love the color scheme,<br>
       the music, the music videos, everything. also, he just looks really good. this was really his era with the bandana icl</p>
-      </li>
+        <img class="look1" src= "https://i0.wp.com/kstationtv.com/wp-content/uploads/2025/09/DKB-HARRY-JUNE-4.jpg?resize=550%2C825&ssl=1" width="300" height="auto">
+        <img class="look1" src="https://www.nautiljon.com/images/galerie/16/39/harry-june_dkb_1336093.webp" width="400" height="auto" style="transform: translate(0px, -184px)">
+    </li>
 
       <li>
         <h3 id="bapefit">Whatever This Was</h3>
-        <p>ngl i just really like how this outfit looks on him. the colors fit him perfectly and i love the way he styled<br>
+        <p class="p2">ngl i just really like how this outfit looks on him. the colors fit him perfectly and i love the way he styled<br>
         this outfit. i think the way he paired the colors makes the whole outfit pop whether or not you decide to focus on the<br>
-      reds or the yellows. the fit fye i love his fashion sense so bad</p>
+      reds or the yellows. the fit fye i love his fashion sense so bad. i also just love the way these colors look on him</p>
+        <img class="look2" src="https://i.pinimg.com/736x/ed/05/76/ed0576b08a2cd4e553f5e4e9d6bbbdef.jpg 
+" width="300" height="auto">
+        <img class="look2" src="https://i.pinimg.com/736x/37/3f/32/373f32967990d7528df1b92c621e9189.jpg
+" width="302" height="auto">
       </li>
 
       <li>
         <h3 id="b2p">Rising Sun (BOYS II PLANET)</h3>
-        <p>i did my first few projects on this performance and i'm still not over it (especially now, since they've covered it again)<br>
+        <p class="p3">i did my first few projects on this performance and i'm still not over it (especially now, since they've covered it again)<br>
         and i will never forget this era for him. i think red is really his color icl i love how he looks in this outfit and i think<br>
       each piece of this outfit complimented him perfectly from head to toe. he also looked real good dancing to this song i was lwk<br>
     really thinking about this cs wow this was my first time seeing harry-june! you would think with the 30k streams i have on dkb<br>
   i would've known them for like 4 years now but it has actually been 8 months</p>
+        <img class="look3" src="https://i.pinimg.com/736x/50/04/a7/5004a7d0e6cce553ab95256f71c38d77.jpg
+" width="300" height="auto">
+        <img class="look3" src="https://i.pinimg.com/736x/92/91/e1/9291e14fd364ad64b0ab003658947506.jpg" width="250" height="auto">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $(".look1").hide();
+      $(".look2").hide();
+      $(".look3").hide();
+      $(".p1").hide();
+      $(".p2").hide();
+      $(".p3").hide();
+
       // ======================== Button #1
       $("#urban-ride").click(function () {
         $("#ride").css("color", "lightblue");
+        $(".look1").show(1000);
+        $(".p1").show(1000);
       });
 
       // ======================== Button #2
       $("#bape").click(function () {
         $("#bapefit").css("color", "gold");
+        $("#bapefit").text("misc. insta post i envy his fashion")
+        $(".look2").show(1000);
+        $(".p2").show(1000);
       });
 
       // ======================== Button #3
       $("#rising-sun").click(function () {
         $("#b2p").css("color", "red");
-        $("#b2p").text("wow i did my first project about these guys");
+        $("#b2p").html("wow i did my <em>first project</em> about these guys");
+        $(".look3").show(1000);
+        $(".p3").show(1000);
       });
 
 
